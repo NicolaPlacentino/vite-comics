@@ -19,7 +19,7 @@ div {
     justify-content: center;
     align-items: center;
 
-    height: calc(100vh - 150px - 600px);
+    height: calc(100vh - 150px - 400px);
 
     span {
         color: white;
