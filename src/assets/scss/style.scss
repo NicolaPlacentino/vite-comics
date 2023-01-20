@@ -1,0 +1,17 @@
+@use './variables' as *;
+@use './mixins' as *;
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general */
+
+p {
+    font-family: $font-condensed;
+}
+
+/* utils */
