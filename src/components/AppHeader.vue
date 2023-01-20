@@ -82,7 +82,6 @@ export default {
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
 
-
 header {
     height: 150px;
 
@@ -109,7 +108,6 @@ header {
             display: flex;
             list-style-type: none;
             height: 100%;
-
 
             li {
                 padding: 0 12px;
