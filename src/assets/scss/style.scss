@@ -10,8 +10,13 @@
 
 /* general */
 
-p {
-    font-family: $font-condensed;
+body {
+    font-family: $font;
 }
 
 /* utils */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}

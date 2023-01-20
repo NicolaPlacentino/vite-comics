@@ -9,7 +9,9 @@ export default {
 </script>
 
 <template>
-  <p>prova</p>
+  <AppHeader></AppHeader>
+  <AppMain></AppMain>
+  <AppFooter></AppFooter>
 </template>
 
 <style lang="scss">
