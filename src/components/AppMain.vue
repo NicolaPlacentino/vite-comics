@@ -1,12 +1,16 @@
 <script>
-import Button from './Button.vue'
+import Button from './MainSecondaryComponents/Button.vue'
+import Card from './MainSecondaryComponents/Card.vue'
 export default {
     name: 'AppMain',
-    components: { Button },
+    components: { Button, Card },
     data() {
         return {
             ButtonText: 'Load more'
         }
+    },
+    props: {
+        comics: Array
     }
 }
 </script>
@@ -19,17 +23,7 @@ export default {
         <div class="container">
             <h2>Current series</h2>
             <div class="card-section">
-
-                <div class="card">
-                    <figure>
-                        <img src='https://www.dccomics.com/sites/default/files/styles/covers192x291/public/gn-covers/2019/04/CTWv1_CC_144-001_HD_5ca5299a751963.53054221.jpg?itok=ooPaoLDq'
-                            alt="alt">
-
-                        <figcaption>Catwoman</figcaption>
-
-                    </figure>
-                </div>
-
+                <Card v-for="comic in comics"></Card>
             </div>
             <div class="text-center">
                 <Button :text="ButtonText"></Button>
@@ -69,31 +63,11 @@ div {
         transform: translateY(-50%);
     }
 
-    .card {
-        width: calc(100% / 6);
-        padding: 10px;
-
-        figure {
-            overflow: hidden;
-
-            img {
-                width: 100%;
-                height: 180px;
-
-                object-fit: cover;
-                object-position: top;
-            }
-
-            figcaption {
-                color: white;
-                font-size: 18px;
-
-                text-transform: uppercase;
-
-                margin: 10px 0;
-            }
-        }
+    .card-section {
+        display: flex;
+        flex-wrap: wrap;
     }
+
 }
 
 .text-center {
