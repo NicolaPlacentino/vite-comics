@@ -23,7 +23,7 @@ export default {
         <div class="container">
             <h2>Current series</h2>
             <div class="card-section">
-                <Card v-for="comic in comics"></Card>
+                <Card v-for="comic in comics" :key="comic.series"></Card>
             </div>
             <div class="text-center">
                 <Button :text="ButtonText"></Button>
