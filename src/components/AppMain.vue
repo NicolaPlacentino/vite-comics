@@ -19,6 +19,7 @@ export default {
         <div class="container">
             <h2>Current series</h2>
             <div class="card-section">
+
                 <div class="card">
                     <figure>
                         <img src='https://www.dccomics.com/sites/default/files/styles/covers192x291/public/gn-covers/2019/04/CTWv1_CC_144-001_HD_5ca5299a751963.53054221.jpg?itok=ooPaoLDq'
@@ -27,8 +28,8 @@ export default {
                         <figcaption>Catwoman</figcaption>
 
                     </figure>
-
                 </div>
+
             </div>
             <div class="text-center">
                 <Button :text="ButtonText"></Button>
