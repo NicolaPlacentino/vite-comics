@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <div class="p-absolute">
+    <footer>
         <div class="jumbo-bg">
             <div class="container">
                 <div class="d-flex">
@@ -78,119 +78,111 @@ export default {
                 </div>
             </div>
         </div>
-    </div>
+    </footer>
 </template>
 
 <style lang="scss" scoped>
 @use '../assets/scss/variables' as *;
 
-.p-absolute {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.jumbo-bg {
+    background-image: url(../assets/img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    height: 300px;
 
-    .jumbo-bg {
-        background-image: url(../assets/img/footer-bg.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+    color: white;
 
-        height: 300px;
+    .container {
+        display: flex;
+        justify-content: space-between;
 
-        color: white;
+        height: 100%;
 
-        .container {
-            display: flex;
-            justify-content: space-between;
+        .col {
+            padding: 40px 20px;
 
-            height: 100%;
-
-            .col {
-                padding: 40px 20px;
-
-                h3 {
-                    font-family: $font-condensed;
-                    text-transform: uppercase;
-                    margin-bottom: 5px;
-                }
-
-                ul {
-                    list-style-type: none;
-
-                    margin-bottom: 10px;
-
-                    li {
-                        font-size: 12px;
-                        color: gray;
-                    }
-                }
+            h3 {
+                font-family: $font-condensed;
+                text-transform: uppercase;
+                margin-bottom: 5px;
             }
 
-            figure {
-                width: 450px;
-                height: 100%;
+            ul {
+                list-style-type: none;
 
-                overflow: hidden;
+                margin-bottom: 10px;
 
-
-                img {
-                    transform: translateY(-17%);
-                    width: 100%;
-                    height: auto;
+                li {
+                    font-size: 12px;
+                    color: gray;
                 }
             }
         }
+
+        figure {
+            width: 450px;
+            height: 100%;
+
+            overflow: hidden;
+
+
+            img {
+                transform: translateY(-17%);
+                width: 100%;
+                height: auto;
+            }
+        }
     }
+}
 
-    .gray-bg {
-        background-color: rgb(60, 60, 60);
-        padding: 30px 0;
+.gray-bg {
+    background-color: rgb(60, 60, 60);
+    padding: 30px 0;
 
-        .container {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        button {
+            padding: 10px;
+            font-size: 20px;
+
+            color: white;
+            background-color: rgba(#000000, 0);
+
+            border: 3px solid dodgerblue;
+
+            cursor: pointer;
+        }
+
+        div {
             display: flex;
-            justify-content: space-between;
             align-items: center;
 
-            button {
-                padding: 10px;
-                font-size: 20px;
+            a {
+                color: dodgerblue;
+                text-decoration: none;
 
-                color: white;
-                background-color: rgba(#000000, 0);
+                font-size: 25px;
+                font-family: $font-condensed;
+                font-weight: bold;
 
-                border: 3px solid dodgerblue;
-
-                cursor: pointer;
+                margin-right: 10px;
             }
 
-            div {
+            ul {
+                list-style-type: none;
+
                 display: flex;
-                align-items: center;
 
-                a {
-                    color: dodgerblue;
-                    text-decoration: none;
+                li {
+                    margin: 0 10px;
 
-                    font-size: 25px;
-                    font-family: $font-condensed;
-                    font-weight: bold;
-
-                    margin-right: 10px;
-                }
-
-                ul {
-                    list-style-type: none;
-
-                    display: flex;
-
-                    li {
-                        margin: 0 10px;
-
-                        img {
-                            height: 40px;
-                            width: auto;
-                        }
+                    img {
+                        height: 40px;
+                        width: auto;
                     }
                 }
             }
